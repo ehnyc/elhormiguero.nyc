@@ -1,0 +1,52 @@
+title: El Hormiguero NYC
+email: justice@elhormiguero.nyc
+baseurl: "https://elhormiguero.nyc"
+url: "https://elhormiguero.nyc"
+description:
+
+future: true
+
+logo: /assets/logo.png
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/social.png
+
+twitter_username: elhormigueronyc
+instagram_username: elhormigueronyc
+facebook_username: elhormigueronyc
+
+social:
+  name: El Hormiguero NYC
+  links:
+    - https://twitter.com/elhormigueronyc
+    - https://instagram.com/elhormigueronyc
+    - https://facebook.com/elhormigueronyc
+
+twitter:
+  username: elhormigueronyc
+  card: summary
+
+facebook:
+  publisher: elhormigueronyc
+
+markdown: kramdown
+
+kramdown:
+  parse_span_html: true
+  input: GFM
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  events:
+    output: true
+    path: ""
+    permalink: /events/:path/
+
+paginate: 5
+paginate_path: "/news/:num/"
